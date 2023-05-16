@@ -24,31 +24,32 @@
     <ProjectGuid>{a8a17bc1-b051-431e-a1dc-684ab3142b9e}</ProjectGuid>
     <RootNamespace>WindowsConsoleGameBase</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Tetris</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -139,21 +140,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BlockFactory.cpp" />
     <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="ExampleGame.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="GameField.cpp" />
+    <ClCompile Include="IBlock.cpp" />
+    <ClCompile Include="JBlock.cpp" />
+    <ClCompile Include="LBlock.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OBlock.cpp" />
     <ClCompile Include="PaintDevice.cpp" />
+    <ClCompile Include="SBlock.cpp" />
     <ClCompile Include="Size.cpp" />
     <ClCompile Include="Square.cpp" />
+    <ClCompile Include="SymbolSet.h" />
+    <ClCompile Include="TBlock.cpp" />
+    <ClCompile Include="Tetris.cpp" />
     <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="ZBlock.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BlockFactory.h" />
+    <ClInclude Include="Colors.h" />
     <ClInclude Include="Engine.h" />
-    <ClInclude Include="ExampleGame.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="GameField.h" />
+    <ClInclude Include="IBlock.h" />
+    <ClInclude Include="JBlock.h" />
+    <ClInclude Include="LBlock.h" />
+    <ClInclude Include="OBlock.h" />
     <ClInclude Include="PaintDevice.h" />
+    <ClInclude Include="SBlock.h" />
     <ClInclude Include="Size.h" />
     <ClInclude Include="Square.h" />
+    <ClInclude Include="TBlock.h" />
+    <ClInclude Include="Tetris.h" />
     <ClInclude Include="Vector2.h" />
+    <ClInclude Include="ZBlock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

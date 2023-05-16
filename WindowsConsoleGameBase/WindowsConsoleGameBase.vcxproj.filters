@@ -19,11 +19,17 @@
     <Filter Include="Source Files\Core">
       <UniqueIdentifier>{093270ac-7f5f-4115-9b96-ed933764cf32}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Examples">
-      <UniqueIdentifier>{0a8b0119-ba7d-4777-bcb4-f566e4bb756c}</UniqueIdentifier>
+    <Filter Include="Header Files\Tetris">
+      <UniqueIdentifier>{d84bfc81-57cf-4a57-9c87-d4e30b3f1104}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Examples">
-      <UniqueIdentifier>{d4b97f01-b61a-4531-a9b5-ad562bc7c946}</UniqueIdentifier>
+    <Filter Include="Source Files\Tetris">
+      <UniqueIdentifier>{e39d65ba-e576-4d7c-a663-e70c1211010c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tetris\Blocks">
+      <UniqueIdentifier>{abf87c9a-bb02-4c2a-9465-c075ba0e229d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetris\Blocks">
+      <UniqueIdentifier>{f96e2249-40d3-492a-95d5-0ef51bbc2dce}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -45,8 +51,41 @@
     <ClCompile Include="Vector2.cpp">
       <Filter>Source Files\Core</Filter>
     </ClCompile>
-    <ClCompile Include="ExampleGame.cpp">
-      <Filter>Source Files\Examples</Filter>
+    <ClCompile Include="Tetris.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="GameField.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
+      <Filter>Source Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolSet.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="IBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="JBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="LBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="OBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="SBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="TBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="ZBlock.cpp">
+      <Filter>Source Files\Tetris\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockFactory.cpp">
+      <Filter>Source Files\Tetris</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -65,8 +104,41 @@
     <ClInclude Include="Vector2.h">
       <Filter>Header Files\Core</Filter>
     </ClInclude>
-    <ClInclude Include="ExampleGame.h">
-      <Filter>Header Files\Examples</Filter>
+    <ClInclude Include="Tetris.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="GameField.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Figure.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="Colors.h">
+      <Filter>Header Files\Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="IBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="JBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="LBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="OBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="SBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="TBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="ZBlock.h">
+      <Filter>Header Files\Tetris\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockFactory.h">
+      <Filter>Header Files\Tetris</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

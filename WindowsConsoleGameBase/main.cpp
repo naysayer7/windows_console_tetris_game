@@ -1,7 +1,7 @@
-#include "ExampleGame.h"
+#include "Tetris.h"
 using namespace std;
 
 int main() {
-	ExampleGame game;
+	Tetris game;
 	return static_cast<int>(game.run());
 }
